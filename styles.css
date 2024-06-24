@@ -293,9 +293,7 @@ body {
     header {
         padding: 10px 10px;
         flex-direction: column;
-       
         align-items: center;
-       
     }
 
     header .logo {
@@ -313,14 +311,11 @@ body {
 
     header div h1 {
         font-size: 23px;
-       
     }
 
     nav ul {
         flex-direction: row;
         gap: 11px;
-        
-        
     }
 
     nav ul li {
@@ -328,22 +323,6 @@ body {
         font-size: 18px;
         font-weight: 900;
         font-family: 'Agency';
-       
-    }
-   
-    .social-buttons a {
-        margin: 0 8px;
-    }
-
-    footer {
-        padding: 5px 0;
-        height: auto;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    .social-buttons a {
-        margin: 0 5px;
     }
 
     main {
@@ -384,6 +363,12 @@ body {
    .contact p a {
     font-family: 'Agency_Light';
     font-weight: 600;
-
    }
+    footer {
+        padding: 5px 0;
+        height: auto;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
 }
