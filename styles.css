@@ -290,7 +290,10 @@ body {
         margin-top: 7px;
       
     }
-    
+    .logo-container h1{
+        font-family: 'Agency';
+        font-weight: bold;
+    }
 
     header div h1 {
         font-size: 23px;
@@ -307,7 +310,7 @@ body {
     nav ul li {
         display: block;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 900;
         font-family: 'Agency';
        
     }
@@ -320,7 +323,7 @@ body {
         padding: 5px 0;
         height: auto;
         font-size: 16px;
-        font-weight: lighter;
+        font-weight: 600;
     }
 
     .social-buttons a {
@@ -342,7 +345,10 @@ body {
     .intro {
         border-top: 1.5px solid #54ee52;
     }
-
+    .intro button{
+      display: block;
+      margin: auto;
+    }
     .services {
         border-bottom: 1.5px solid #54ee52;
     }
@@ -357,11 +363,11 @@ body {
     }
    .contact p{
     font-family: 'Agency_Light';
-    font-weight: 500;
+    font-weight: 600;
    }
    .contact p a {
     font-family: 'Agency_Light';
-    font-weight: 500;
+    font-weight: 600;
 
    }
 }
