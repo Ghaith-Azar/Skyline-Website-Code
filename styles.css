@@ -332,6 +332,9 @@ body {
     .welcome-banner {
         margin-top: 50px;
     }
+    .welcome-banner h1{
+        font-weight: bolder;
+    }
 
     .intro, .services, .vision, .about, .contact {
         margin-bottom: 10px;
