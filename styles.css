@@ -1,9 +1,12 @@
 /* General Styles */
 @font-face {
     font-family: 'Agency' ;
-    src: url(fonts/AGENCYB.TTF);
+    src: url(fonts/agencyfb_bold.ttf);
 }
-
+@font-face {
+    font-family: 'Agency_Light' ;
+    src: url(fonts/agencyfb_reg.ttf);
+}
 html {
     position: relative;
     min-height: 100%;
@@ -31,6 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 header .logo-container {
@@ -41,6 +45,7 @@ header .logo-container {
 header .logo {
     height: 50px;
     margin-right: 7px;
+    margin-top: 7px;
 }
 
 header div h1 {
@@ -54,7 +59,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
@@ -181,8 +186,6 @@ footer {
 
 
 
-
-
 .footer-section .social-buttons a {
     margin: 0 10px;
     color: #000000;
@@ -208,9 +211,6 @@ footer {
 
 
 
-
-
-
 /* Contact Us page */
 .contact p {
     font-weight: bold;
@@ -224,23 +224,6 @@ footer {
 .contact p a:hover {
     color: #a7f3a4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -285,36 +268,50 @@ body {
 
 
 
-
-
-
-@media screen and (max-width: 740px) {
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 720px) {
+    .wrapper{
+        font-family: 'Agency_Light';
+        font-weight: 500;
+    }
     header {
         padding: 10px 10px;
         flex-direction: column;
-        align-items: stretch;
+       
+        align-items: center;
+       
     }
 
     header .logo {
-        height: 40px;
+        height: 48px;
         margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        margin-top: 7px;
+      
     }
+    
 
     header div h1 {
-        font-size: 22px;
-        text-align: center;
+        font-size: 23px;
+       
     }
 
     nav ul {
         flex-direction: row;
-        gap: 10px;
+        gap: 11px;
+        
+        
     }
 
     nav ul li {
         display: block;
         font-size: 18px;
+        font-weight: bold;
+        font-family: 'Agency';
+       
     }
-
+   
     .social-buttons a {
         margin: 0 8px;
     }
@@ -323,6 +320,7 @@ body {
         padding: 5px 0;
         height: auto;
         font-size: 16px;
+        font-weight: lighter;
     }
 
     .social-buttons a {
@@ -357,10 +355,13 @@ body {
         display: block;
         font-size: 18px;
     }
+   .contact p{
+    font-family: 'Agency_Light';
+    font-weight: 500;
+   }
+   .contact p a {
+    font-family: 'Agency_Light';
+    font-weight: 500;
+
+   }
 }
-
-
-
-
-
-
