@@ -675,6 +675,7 @@ body {
     nav ul {
         flex-direction: row;
         gap: 11px;
+        align-items: center;
     }
 
     nav ul li {
