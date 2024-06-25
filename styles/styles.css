@@ -684,6 +684,7 @@ body {
         font-size: 18px;
         font-weight: 900;
         font-family: 'Agency';
+        align-items: center;
     }
 
     main {
