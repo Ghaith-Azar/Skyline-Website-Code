@@ -56,22 +56,6 @@
     <main>
 
 
-        <style>
-            .about-us{
-                width: 75%;
-                display: inline-block;
-                border-right: #54ee52 4px double;
-                border-left: #54ee52 4px double;
-                padding-left: 50px;
-                padding-right: 50px;
-             
-            }
-
-
-        </style>
-
-
-
         <center>
         <section class="about-us">
             <h1>About Us</h1>
@@ -102,14 +86,11 @@
             </p>
           
 
-            <button onclick="location.href='services'" >
+            <button onclick="location.href='services'" class="button">
                 Visit Our Services Now
 
             </button>
-            
-            
-
-
+          
             <style>
 
 button {
@@ -190,7 +171,7 @@ button {
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  
+
 
 
 
@@ -203,14 +184,15 @@ button {
 
   /* Section Styling */
   .about-us {
-            width: 80%;
+            width: 75%;
             margin: 50px auto;
-            padding: 50px;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border-radius: 10px;
             border: 2px solid #02e901;
             box-shadow: #54ee52 0 0 15px 5px;
+            animation: fadeIn 2s ease;
+
         }
 
        .about-us h1, h3 {
@@ -220,52 +202,11 @@ button {
 
         p {
             line-height: 1.6;
-          
         }
 
         
+      
 
-
-        .about-us {
-    animation: fadeIn 2s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         .about-us {
-            width: 75%;
-            padding-left: 50px;
-            padding-right: 50px;
-            border-right: #54ee52 4px double;
-            border-left: #54ee52 4px double;
-        }
 
         @media (max-width: 768px) {
             /* For tablets and smaller screens */
@@ -281,15 +222,68 @@ button {
         @media (max-width: 480px) {
             /* For mobile phones */
             .about-us {
-                width: 100%;
-                padding-left: 20px;
-                padding-right: 20px;
+                width: 75%;
                 border-left: none;
                 border-right: none;
             }
         }
-
         
+
+
+
+
+
+        /* Buttons */
+        button {
+            position: relative;
+            padding: 12px 25px;
+            border-radius: 30px;
+            border: 3px solid #02e901;
+            font-size: 14px;
+            background: transparent;
+            color: #fff;
+            letter-spacing: 1.2px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            font-family: 'Agency';
+        }
+
+        button:hover {
+            background: #02e901;
+            box-shadow: 0 0 15px 5px #8aff8e;
+        }
+
+        button::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            transition: width 0.5s ease;
+        }
+
+        button:hover::before {
+            width: 100%;
+        }
+
+
+
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
 
 
             </style>
