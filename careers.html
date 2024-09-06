@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Skyline Web Solutions</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/services-button.css">
+    <link rel="stylesheet" href="styles/color-theme-settings.css">
+</head>
+
+<body>
+
+<style>
+.container {
+    max-width: 900px;
+    text-align: center;
+}
+
+.Quality-looking  {
+    color: var( ----text-color);
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.value-box {
+    background-color: #1E1E1E;
+    border: 2px solid var( ----text-color);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+
+    background-color: var(---background-color);
+    font-weight: bold;
+}
+.value-box:hover {
+  transform: translateY(-10px);
+}
+.value-box h2 {
+    color: var( ----text-color);
+    margin-bottom: 10px;
+}
+.value-box p{
+    color: var(---text-color);
+}
+
+
+
+.Endofcareers{
+    border-top: #54ee52 3px dashed;
+}
+
+
+
+.contact-btn {
+  font-size: 16px;
+  background-color: #038142;
+  color: #fff;
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  font-family: 'Agency';
+}
+
+.contact-btn:before {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  z-index: -1;
+  background-color: #008542 !important;
+  box-shadow: 0 -4px rgb(21 108 0 / 50%) inset,
+    0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset,
+    4px 0 rgb(21 108 0 / 50%) inset;
+}
+
+.contact-btn:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+.contact-btn:hover:before {
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset,
+    -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+.contact-btn:hover:after {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+
+.contact-btn:active {
+  transform: translateY(4px);
+}
+
+.contact-btn:active:after {
+  box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
+
+
+
+
+
+
+
+
+</style>    
+    <div class="wrapper">
+        <header>
+            <div class="logo-container">
+                <a href="/">
+                    <img src="skyline logo.png" alt="Skyline Web Solutions Logo" class="logo">
+                </a>
+                <h1>Skyline Web Solutions</h1>
+            </div>
+
+           
+
+            <nav>
+                <div class="menu-icon" id="menu-icon">&#9776;</div> 
+                <center>
+                    <ul id="menu">
+                        <button id="close-menu" class="close-button">&times;</button> 
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li>
+                            <label class="ui-switch">
+                                <input type="checkbox" id="theme-toggle">
+                                <div class="slider">
+                                  <div class="circle"></div>
+                                </div>
+                              </label>
+                        </li>
+                    </ul>
+                </center>
+
+            </nav>
+            
+        </header>
+
+        <main>
+            <body>
+                
+                <center>
+                    <section class="skyline-recruitment">
+                        <h1>
+                            <b>Join The Skyline Team</b>
+                        </h1>
+                        <h4>
+                            Skyline is continuously on the lookout for talented software engineers and web developers to join our dynamic team.
+                            We pride ourselves on delivering innovative and cutting-edge solutions to our clients, and we believe that our success is driven by the exceptional individuals we work with. 
+                            If you have a passion for technology and a drive to create outstanding web experiences, we highly recommend that you apply to Skyline. 
+                            We offer a collaborative environment, exciting projects, and ample opportunities for professional growth. 
+                            Don’t miss the chance to be a part of something extraordinary—apply today and elevate your career with Skyline.
+                        </h4>
+                    </section>
+                </center>
+                
+                <style>
+                @keyframes gradientAnimation {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+                             
+                .skyline-recruitment {
+                    width: 80%;
+                    padding: 40px;
+                    padding-top: 1px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: larger;
+                    border-bottom: 3px solid #02e901;
+                    background: linear-gradient(135deg, #1e1e1e 0%, #1a1a2e 50%, #16213e 100%);
+                    background-size: 200% 200%;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 20px rgba(2, 233, 1, 0.3);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    animation: gradientAnimation 5s ease infinite;
+                }
+                
+                .skyline-recruitment:hover {
+                    transform: scale(1.02);
+                    box-shadow: 0px 0px 30px rgba(2, 233, 1, 0.6);
+                }
+                
+                .skyline-recruitment h1 {
+                    font-size: 2.4em;
+                    text-transform: uppercase;
+                    background: linear-gradient(90deg, rgba(2, 233, 1, 1) 0%, rgba(0, 212, 255, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: 20px;
+                }
+                
+                .skyline-recruitment h4 {
+                    font-size: 1.2em;
+                    line-height: 1.6;
+                    color: #B0B0B0;
+                    opacity: 0;
+                    animation: fadeInText 2s forwards;
+                    animation-delay: 0.5s;
+                }
+                
+                @keyframes fadeInText {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                
+                @media screen and (max-width: 740px) {
+                    .skyline-recruitment h1 {
+                        font-size: 1.8em;
+                    }
+                    
+                    .skyline-recruitment h4 {
+                        font-size: 0.95em;
+                    }
+                }
+                
+                </style>
+                
+
+
+
+
+            <section class="careers-info">
+                <center>
+
+                <div class="container">
+        <h1 class="Quality-looking">What Do We Look For?</h1>
+        <p>If you're ready to commit, if you're ready to take a stand, then a career with us might be your next big move. To join us, these are the values you must embody:</p>
+        
+        
+        <div class="values">
+            <div class="value-box">
+                <h2>Proficiency in Relevant Languages and Frameworks</h2>
+                <p>HTML, CSS, JavaScript <br>
+                    Frontend frameworks (React, Angular, Vue.js)<br>
+                    Backend languages (Node.js, Python, Ruby, PHP, Java)<br>
+                    Backend frameworks (Express, Django, Ruby on Rails, Laravel)</p>
+            </div>
+            
+
+            <div class="value-box">
+                <h2>Understanding of Responsive Design</h2>
+                <p>Ensuring websites work well on different devices and screen sizes</p>
+            </div>
+
+
+            <div class="value-box">
+                <h2>Knowledge of Web Performance Optimization</h2>
+                <p>Techniques to improve load times and overall performance</p>
+            </div>
+
+
+            <div class="value-box">
+                <h2>Character</h2>
+                <p>We seek individuals who bring a unique personality and a compelling story. Whether you've started your own project or found a critical exploit in a system, your distinctiveness is your strength.</p>
+            </div>
+
+
+            <div class="value-box">
+                <h2>Creativity</h2>
+                <p>If you can think outside the box and bring radical, abstract ideas to life, you're our kind of person.</p>
+            </div>
+           
+
+            <div class="value-box">
+                <h2>Ownership</h2>
+                <p>Approach each task with an entrepreneurial mindset, fully accountable for your actions and their impact on our growth - regardless of your title.</p>
+            </div>
+
+
+            <div class="value-box">
+                <h2>Transparency & Ambition</h2>
+                <p>We're extremely open about our goals, methods, and ambitions. We expect you to bring this same honesty. We're planning for the long haul, so be ready to aim big and go far.</p>
+            </div>
+
+
+            <div class="value-box">
+                <h2>Open Communication</h2>
+                <p>Whether you're a support agent or a C-level manager, your voice matters. We remove barriers to ensure clear, direct, and respectful communication.</p>
+            </div>
+        </div>
+    </div>
+              
+</center>
+
+
+            </section>
+
+<br><br>
+
+
+
+            <section class="Endofcareers">
+               <center> <h1>
+                    To Apply Send us your CV by mail or Give us a call
+                </h1>
+                <button onclick="location.href='contact'" class="contact-btn">Find Our Contact Info Here</button>
+            </center>
+
+
+
+            </section>
+
+ </body>
+
+
+        
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+    
+    
+            <div class="footer-section about">
+                <h2>About Skyline Web Solutions</h2>
+                <p>Skyline Web Solutions is dedicated to creating stunning websites that help businesses achieve their online goals. We specialize in custom website design, responsive web development, and website maintenance.</p>
+            </div>
+    
+    
+    
+    
+    
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="careers">Careers</a></li>
+                </ul>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+            <div class="footer-section contact-info">
+                <h2>Contact Us</h2>
+                <p>Email:<a href="mailto:info@skylinewebdevelopment.com"> info@skylinewebdevelopment.com</a></p>
+                <p>Phone: <a href="tel:+962798405587" target="_blank" >+962 79 840 5587</a></p>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+            <div class="footer-section social-buttons">
+                <h2>Follow Us</h2>
+                <ul>
+                <li><a href="https://www.instagram.com/skylinewebsolutions_/" target="_blank">Instagram</a></li>
+                <li><a href="https://x.com/SkylineWeb42102" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Skyline Web Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+
+    
+    </script>
+        <script src="scripts.js"></script>
+
+
+
+
+    </body>
+    </html>
