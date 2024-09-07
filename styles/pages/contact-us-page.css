@@ -1,0 +1,194 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Agency';
+}
+
+.contact-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  
+}
+
+.contact-up, .contact-down {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    
+}
+
+.contact-up {
+    border:4px solid  #64ffda ;
+    border-width: 5px;
+    animation: slideIn 1.2s ease-out;
+
+}
+
+.contact-up-title h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    color: #a7f3a4;
+}
+
+.contact-up-title h2::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background: #a7f3a4;
+    position: absolute;
+    bottom: -15px;
+    left: 20%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease;
+}
+
+.contact-up-title h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.contact-up-title h3 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    color: #a7f3a4;
+}
+
+.contact-up-title h3::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background: #a7f3a4;
+    position: absolute;
+    bottom: -5px;
+    left: 20%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease;
+}
+.contact-up-title h3:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.contact-inputs {
+    width: calc(100% - 32px);
+    margin: 12px 0;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+
+textarea.contact-inputs {
+    resize: vertical;
+    height: 150px; /* Adjust height as needed */
+}
+
+.contact-inputs:hover{
+    transform: translateY(-5px);
+
+}
+.contact-inputs::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-inputs:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition:  transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: #02e901 2px solid;
+
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-5px);
+}
+
+.contact-down {
+    color: white;
+    animation: slideIn 1.2s ease-out;
+    border:4px solid  #64ffda ;
+    border-width: 5px;
+    text-align: center;
+
+}
+
+.contact-down h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #a7f3a4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact-down p {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.contact-down p a {
+    color: #a7f3a4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-down p a:hover {
+    color: #54ee52;
+}
+
+/* Animations */
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1024px) {
+    .contact-up, .contact-down {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-up, .contact-down {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-inputs, button[type="submit"] {
+        padding: 12px 16px;
+    }
+}
