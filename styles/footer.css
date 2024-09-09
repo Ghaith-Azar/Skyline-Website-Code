@@ -1,0 +1,177 @@
+/* General page setup to ensure footer stays at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Agency', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(180deg, #033d00, #000000);
+    color: #8aff8e;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top: 2px solid #02e901;
+    box-shadow: 0 -10px 30px rgba(0, 255, 0, 0.2);
+    z-index: 10;
+}
+
+/* Footer content sections */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 220px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.footer-section:hover {
+    transform: translateY(-8px);
+}
+
+.footer-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #54ee52;
+    background: linear-gradient(90deg, #02e901, #54ee52);
+    -webkit-background-clip: text;
+    color: transparent;
+    border-bottom: 2px solid #02e901;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #8aff8e;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #8aff8e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: #02e901;
+    text-shadow: 0 0 10px #02e901;
+}
+
+/* Redesigned footer bottom section */
+.footer-bottom {
+    background-color: #000000;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #54ee52;
+    border-top: 1px solid #54ee52;
+    letter-spacing: 2px;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #54ee52, 0 0 10px #54ee52; }
+    50% { text-shadow: 0 0 15px #02e901, 0 0 20px #02e901; }
+    100% { text-shadow: 0 0 5px #54ee52, 0 0 10px #54ee52; }
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Redes - Social Media Icons */
+.redes {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: 2px solid #8aff8e;
+    transition: transform 0.3s ease, background-color 0.3s;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.redes a svg {
+    fill: #8aff8e;
+    width: 25px;
+    height: 25px;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    background-color: #02e901;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+}
+
+/* Tooltip for social icons */
+.tooltip {
+    visibility: hidden;
+    background-color: #02e901;
+    color: #000000;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.redes a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Add futuristic gradient borders to footer sections */
+.footer-section {
+    border-left: 2px solid #54ee52;
+    border-right: 2px solid #02e901;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
