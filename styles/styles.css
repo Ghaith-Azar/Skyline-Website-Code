@@ -693,6 +693,8 @@ main {
     text-align: center;
     padding: 0 20px;
     position: relative;
+    border-radius: 50px;
+
 }
 
 .hero-content {
@@ -758,8 +760,8 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 150%;
-    height: 150%;
+    width: 100%;
+    height: 100%;
     background: radial-gradient(circle, rgba(2, 233, 1, 0.2) 0%, transparent 70%);
     z-index: 0;
     transform: translate(-50%, -50%);
