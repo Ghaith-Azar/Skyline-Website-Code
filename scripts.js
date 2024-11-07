@@ -85,3 +85,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     observer.observe(servicesList);
 });
+
+
+
+
+
+
+
+
+// FOOTER CAHNGING STYLE CODE
+
+document.getElementById('toggleSwitch').addEventListener('change', function() {
+    const footer1 = document.getElementById('footer-style-1');
+    const footer2 = document.getElementById('footer-style-2');
+    const toggleContainer = document.querySelector('.toggle-container');
+    
+    if (this.checked) {
+        footer1.style.display = 'none';
+        footer2.style.display = 'block';
+        toggleContainer.style.backgroundColor = '#02e901';  
+        
+    } else {
+        footer1.style.display = 'block';
+        footer2.style.display = 'none';
+        toggleContainer.style.backgroundColor = '';  // Reset background color when toggler is off
+    }
+});
