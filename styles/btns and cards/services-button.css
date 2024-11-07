@@ -1,84 +1,47 @@
 /* SERVICES BUTTON ON INDEX PAGE */
+
 .services button {
-    position: relative;
-    padding: 10px 17px;
-    border-radius: 7px;
-    border: 3px solid #02e901;
-    text-transform: uppercase;
-    font-size: 13.5px;
-    letter-spacing: 1px;
-    background: transparent;
-    color: var(--text-color);
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    margin-bottom: 10px;
-    font-family: 'Agency';
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 15px;
+  width: 9em;
+  position: relative;
+  height: 3.5em;
+  border: 3.5px ridge orange;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 0.5s;
+  border-radius: 0.3em;
+  font-weight: bold;
+  font-family: monospace;
+  cursor: pointer;
+  margin-top: 30px;
   }
-  
-  .services button:hover {
-    background: #02e901;
-    box-shadow: 0 0 30px 5px #8aff8e;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  
-  .services button:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-  }
-  
-  .services button::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-  }
-  
-  @keyframes sh02 {
-    from {
-      opacity: 0;
-      left: 0%;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      left: 100%;
-    }
-  }
-  
-  .services button:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-  }
-/* END OF SERVICES BUTTON ON INDEX PAGE */
-  
 
+.services button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.2s;
+  transform-origin: center;
+}
 
+.services button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.5s;
+}
 
+.services button:hover::before, button:hover::after {
+  transform: scale(0)
+}
 
-
+.services button:hover {
+  box-shadow: inset 0px 0px 20px rgb(141, 96, 14);
+}
