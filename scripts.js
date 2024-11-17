@@ -156,6 +156,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const button = document.querySelector(".button");
     let isScrolling = false;
@@ -170,8 +176,37 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("touchstart", () => {
         if (isScrolling) {
             button.classList.add("hover-effect");
-            setTimeout(() => button.classList.remove("hover-effect"), 700); // Optional reset
         }
     });
 });
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Add scroll-triggered animation on vision items
+    const visionItems = document.querySelectorAll('.vision-item');
+
+    function checkVisibility() {
+        const windowHeight = window.innerHeight;
+        visionItems.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top <= windowHeight - 150) {
+                item.classList.add('in-view');
+            }
+        });
+    }
+
+    checkVisibility(); // Run on initial load
+
+    // Trigger animation on scroll
+    window.addEventListener('scroll', checkVisibility);
+});
+
+
+
 
