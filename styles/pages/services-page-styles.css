@@ -6,17 +6,11 @@
  
 }
 
-
 .services-page{
   align-items: center;
   position: relative;
   justify-content: center;
 }
-
-
-
-
-
 
 * { 
   box-sizing: border-box; 
@@ -53,7 +47,7 @@ i {
   display: flex; 
   flex-wrap: wrap; 
   justify-content: space-around; 
- 
+
 } 
 
 .service-card { 
@@ -64,11 +58,8 @@ i {
   text-align: center; 
   border-radius: 5px; 
   border: 2px solid green;
-
-  
   transition: all 0.3s ease-in-out; 
 } 
-
 
 .icon-container { 
   border: 2px solid lightgreen; 
@@ -95,16 +86,8 @@ i {
 
 
 
-
-
-
-
-
-
 @media (max-width: 768px) { 
   .service-card { 
       width: 100%; 
   } 
 } 
-
-

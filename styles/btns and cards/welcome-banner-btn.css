@@ -125,14 +125,6 @@
   }
 
 
-
-
-
-
-
-
-
-
   /* Hover Effect for Desktop */
 .button:hover {
   color: #fff;
@@ -154,14 +146,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 /* Mobile Hover Effect Class */
 .hover-effect {
   color: #fff;
@@ -181,11 +165,3 @@
   opacity: 0;
   transition-delay: 0s;
 }
-
-
-
-
-
-
-
-

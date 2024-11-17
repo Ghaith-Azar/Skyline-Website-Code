@@ -12,7 +12,6 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
-  
 }
 
 .contact-up, .contact-down {
@@ -22,14 +21,12 @@
     padding: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     color: white;
-    
 }
 
 .contact-up {
     border:4px solid  #64ffda ;
     border-width: 5px;
     animation: slideIn 1.2s ease-out;
-
 }
 
 .contact-up-title h2 {
@@ -84,7 +81,6 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
 
 .contact-inputs {
     width: calc(100% - 32px);

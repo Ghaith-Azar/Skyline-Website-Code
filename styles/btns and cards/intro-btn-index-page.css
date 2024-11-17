@@ -11,21 +11,14 @@
     --hover-btn-color: #02e901;
     --default-btn-color: var(--text-color);
     --font-size: 16px;
-    /* 👆 this field should not be empty */
     --font-weight: 600;
-    
-    /* 👆 this field should not be empty */
-
-    
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
     border-radius: 7px;
-
   }
   
   /* button settings 👆 */
-  
   .intro button {
     box-sizing: border-box;
     padding: var(--btn-padding);

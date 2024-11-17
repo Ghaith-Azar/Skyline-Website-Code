@@ -204,10 +204,6 @@ nav ul li a {
 }
 
 
-
-
-
-
 /*What is Skyline? And What Do We Do?
  General Styling */
 .intro {
@@ -273,24 +269,6 @@ nav ul li a {
 .p4 {
     position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -391,19 +369,6 @@ nav ul li a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Hover Effect for Desktop */
 .our-service-card:hover {
     transform: translateY(-10px);
@@ -423,17 +388,6 @@ nav ul li a {
 .hover-effect::before {
     transform: scale(1.3);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -472,37 +426,7 @@ nav ul li a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* OUR VISION SECTION */
 .trying-something{
     width: 100%;
     height: 100%;
@@ -514,192 +438,8 @@ nav ul li a {
 
 
 
-.vision {
-    background: linear-gradient(145deg, #050f1d, #0b243e); /* Darker background */
-   
-   
-   
-   
-   
-   
-    color: #e0f7fa;
-    padding: 80px 30px;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    margin: 50px auto;
-    max-width: 700px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Stronger shadow */
-    border: 2px solid rgba(255, 255, 255, 0.15); /* Slightly stronger border */
-    transition: all 0.3s ease-in-out;
-}
-
-.vision:hover {
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8); /* More pronounced shadow on hover */
-    border-color: rgba(255, 255, 255, 0.25); /* Subtle border color change on hover */
-    transform: scale(1.02); /* Slight zoom on hover */
-}
-
-.vision h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    color: #54ee52;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 40px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.2); /* Line below the title */
-    padding-bottom: 15px;
-    background: linear-gradient(to right, #02e901, #8aff8e);
-    -webkit-background-clip: text;
-    color: transparent; /* Gradient text for the heading */
-}
-
-.vision-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.05); /* Light background for each item */
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Card shadow */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Slight border */
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
-}
-
-.vision-item::before {
-    content: '';
-    position: absolute;
-    top: -150%;
-    left: -150%;
-    width: 400%;
-    height: 400%;
-    background: radial-gradient(circle, rgba(2, 98, 2, 0.3), transparent 80%);
-    transition: opacity 0.5s;
-    z-index: 0;
-    transform: rotate(45deg);
-}
-
-.vision-item:hover::before {
-    top: -20%;
-    left: -20%;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-}
-
-.vision-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-}
-
-.vision-icon {
-    flex-shrink: 0;
-    margin-right: 20px;
-    font-size: 2.2rem;
-    color: #8aff8e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1; /* Ensuring icon stays above radial gradient */
-}
-
-.vision-content {
-    z-index: 1;
-}
-
-.vision-content h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #02e901;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 5px;
-    transition: color 0.3s ease-in-out;
-}
-
-.vision-item:hover h3 {
-    color: #54ee52;
-}
-
-.vision-intro {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: #b2f5ea;
-}
-
-.vision p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #a0aec0;
-}
-
-.vision-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .vision {
-        padding: 50px 20px;
-    }
-
-    .vision-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .vision-icon {
-        margin-bottom: 15px;
-    }
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.trying-something{
-    width: 100%;
-    height: 100%;
-    background-image: repeating-radial-gradient(#0c0a0a 80%, #2f312f 90%, #3f4549 90%);
-    background-size: 65px 65px;
-}
 
 .vision {
     background: linear-gradient(145deg, #050f1d, #0b243e); 
@@ -860,76 +600,9 @@ nav ul li a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main {
     padding: 20px;
 }
-
-
 
 
 
@@ -1026,31 +699,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .intro, .services, .vision, .about, .contact {
     margin-bottom: 20px;
 }
@@ -1058,7 +706,6 @@ main {
 button:hover {
     background-color: #54ee52;
 }
-
 
 
 
@@ -1141,4 +788,3 @@ button:hover {
         margin-top: 0;
     }
 }
-
