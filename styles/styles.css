@@ -204,6 +204,182 @@ nav ul li a {
 }
 
 
+
+
+/* Welcome Banner Section */
+.welcome-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #020f02;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    border-radius: 50px;
+
+}
+
+.hero-content {
+    max-width: 700px;
+    color: #ffffff;
+}
+
+.welcome-banner h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #02e901;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.welcome-banner .subheading {
+    font-size: 1.5em;
+    color: #8aff8e;
+    margin-bottom: 30px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+.welcome-banner p {
+    font-size: 1.2em;
+    color: #d4ffd4;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.welcome-banner .logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.welcome-banner .logo:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Add a subtle background glow effect */
+.welcome-banner::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(2, 233, 1, 0.2) 0%, transparent 70%);
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+
+
+
+.intro, .services, .vision, .about, .contact {
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #54ee52;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 720px) {
+    .wrapper{
+        font-family: 'Agency_Light';
+        font-weight: 550;
+    }
+    
+    .logo-container{
+        align-items: center;
+    }
+    header .logo {
+        height: 48px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        margin-top: 7px;
+      
+    }
+    .logo-container h1{
+        font-family: 'Agency';
+        font-weight: bold;
+    }
+
+    header div h1 {
+        font-size: 23px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .welcome-banner {
+        margin-top: 50px;
+    }
+    .welcome-banner h1{
+        font-weight: bolder;
+    }
+
+    .intro, .services, .vision, .about, .contact {
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        border-top: 1.5px solid #54ee52;
+    }
+    .intro button{
+      display: block;
+      margin: auto;
+    }
+    .services {
+        border-bottom: 1.5px solid #54ee52;
+    }
+    .services button{
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .vision {
+        border-bottom: 1.5px solid #54ee52;
+        margin-bottom: 0;
+    }
+
+    #theme-toggle {
+        display: block;
+        font-size: 18px;
+    }
+    footer {
+        padding: 5px 0;
+        height: auto;
+        font-size: 16px;
+        font-weight: 900;
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
 /*What is Skyline? And What Do We Do?
  General Styling */
 .intro {
@@ -595,196 +771,8 @@ nav ul li a {
 
 
 
-
-
-
-
-
 main {
     padding: 20px;
 }
 
 
-
-
-
-
-
-/* Welcome Banner Section */
-.welcome-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #020f02;
-    text-align: center;
-    padding: 0 20px;
-    position: relative;
-    border-radius: 50px;
-
-}
-
-.hero-content {
-    max-width: 700px;
-    color: #ffffff;
-}
-
-.welcome-banner h1 {
-    font-size: 3.5em;
-    font-weight: 700;
-    color: #02e901;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.welcome-banner .subheading {
-    font-size: 1.5em;
-    color: #8aff8e;
-    margin-bottom: 30px;
-    font-style: italic;
-    letter-spacing: 0.1em;
-}
-
-.welcome-banner p {
-    font-size: 1.2em;
-    color: #d4ffd4;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.welcome-banner .logo {
-    width: 180px;
-    height: auto;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.welcome-banner .logo:hover {
-    transform: scale(1.05);
-}
-
-
-
-/* Add a subtle background glow effect */
-.welcome-banner::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(2, 233, 1, 0.2) 0%, transparent 70%);
-    z-index: 0;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-.hero-content {
-    z-index: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.intro, .services, .vision, .about, .contact {
-    margin-bottom: 20px;
-}
-
-button:hover {
-    background-color: #54ee52;
-}
-
-
-
-
-
-
-
-
-/* RESPONSIVE DESIGN */
-@media screen and (max-width: 720px) {
-    .wrapper{
-        font-family: 'Agency_Light';
-        font-weight: 550;
-    }
-    
-    .logo-container{
-        align-items: center;
-    }
-    header .logo {
-        height: 48px;
-        margin-right: 5px;
-        display: inline-block;
-        position: relative;
-        margin-top: 7px;
-      
-    }
-    .logo-container h1{
-        font-family: 'Agency';
-        font-weight: bold;
-    }
-
-    header div h1 {
-        font-size: 23px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .welcome-banner {
-        margin-top: 50px;
-    }
-    .welcome-banner h1{
-        font-weight: bolder;
-    }
-
-    .intro, .services, .vision, .about, .contact {
-        margin-bottom: 10px;
-    }
-
-    .intro {
-        border-top: 1.5px solid #54ee52;
-    }
-    .intro button{
-      display: block;
-      margin: auto;
-    }
-    .services {
-        border-bottom: 1.5px solid #54ee52;
-    }
-    .services button{
-        display: block;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    .vision {
-        border-bottom: 1.5px solid #54ee52;
-        margin-bottom: 0;
-    }
-
-    #theme-toggle {
-        display: block;
-        font-size: 18px;
-    }
-    footer {
-        padding: 5px 0;
-        height: auto;
-        font-size: 16px;
-        font-weight: 900;
-        margin-top: 0;
-    }
-}
