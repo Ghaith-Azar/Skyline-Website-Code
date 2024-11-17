@@ -280,6 +280,21 @@ nav ul li a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Services Section Styling */
 .services {
     padding: 5rem 2rem;
@@ -373,6 +388,43 @@ nav ul li a {
         padding: 1.5rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover Effect for Desktop */
+.our-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 109, 0, 0.5);
+}
+
+.our-service-card:hover::before {
+    transform: scale(1.3);
+}
+
+/* Hover Effect Class for Mobile */
+.hover-effect {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 109, 0, 0.5);
+}
+
+.hover-effect::before {
+    transform: scale(1.3);
+}
+
+
 
 
 

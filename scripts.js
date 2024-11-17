@@ -111,3 +111,43 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
         toggleContainer.style.backgroundColor = '';  // Reset background color when toggler is off
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const serviceCards = document.querySelectorAll(".our-service-card");
+    let isScrolling = false;
+
+    // Detect scrolling
+    document.addEventListener("scroll", () => {
+        isScrolling = true;
+        setTimeout(() => (isScrolling = false), 200); // Reset after scrolling stops
+    });
+
+    // Add animation on touch while scrolling
+    serviceCards.forEach((card) => {
+        card.addEventListener("touchstart", () => {
+            if (isScrolling) {
+                card.classList.add("hover-effect");
+                setTimeout(() => card.classList.remove("hover-effect"), 500); // Optional reset
+            }
+        });
+    });
+});
