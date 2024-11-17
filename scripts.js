@@ -151,3 +151,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector(".button");
+    let isScrolling = false;
+
+    // Detect scrolling
+    document.addEventListener("scroll", () => {
+        isScrolling = true;
+        setTimeout(() => (isScrolling = false), 200); // Reset after scrolling stops
+    });
+
+    // Add animation on touch while scrolling
+    button.addEventListener("touchstart", () => {
+        if (isScrolling) {
+            button.classList.add("hover-effect");
+            setTimeout(() => button.classList.remove("hover-effect"), 700); // Optional reset
+        }
+    });
+});
+

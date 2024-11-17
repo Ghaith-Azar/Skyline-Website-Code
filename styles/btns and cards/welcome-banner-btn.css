@@ -123,3 +123,52 @@
   .button:hover span:nth-child(4 ) {
     bottom: 50%;
   }
+
+
+
+
+
+
+
+
+
+
+  /* Hover Effect for Desktop */
+.button:hover {
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.button:hover::before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--color),
+    0 0 30px var(--color),
+    0 0 60px var(--color);
+}
+
+.button:hover span {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+/* Mobile Hover Effect Class */
+.hover-effect {
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.hover-effect::before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--color),
+    0 0 30px var(--color),
+    0 0 60px var(--color);
+}
+
+.hover-effect span {
+  opacity: 0;
+  transition-delay: 0s;
+}
