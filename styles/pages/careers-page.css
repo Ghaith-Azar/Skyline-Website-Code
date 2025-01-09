@@ -11,7 +11,27 @@
         background-position: 0% 50%;
     }
 }
-             
+          
+/* Color Mode Change Settings */
+
+/* Color Mode Change Settings */
+:root {
+    --background-color: #000000;
+    ---background-color:#1e1e1e92;
+    ----background-color:rgb(30, 30, 30);
+    --text-color: #ffffff;
+    ---text-color:#B0B0B0;
+    ----text-color:#FFDD00;
+    --accent-color: #02e901;
+    
+}
+
+
+
+
+
+
+   
 .skyline-recruitment {
     width: 80%;
     padding: 40px;
