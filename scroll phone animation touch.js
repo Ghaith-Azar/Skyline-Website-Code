@@ -82,8 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     let isScrolling = false;
 
