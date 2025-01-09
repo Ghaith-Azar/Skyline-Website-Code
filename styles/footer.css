@@ -18,7 +18,7 @@ main {
 
 
 /* TOGGLE SWITCH styling */
-.toggle-container {
+/* .toggle-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,13 +64,15 @@ input:checked + .slider {
 }
 input:checked + .slider:before {
     transform: translateX(24px);
-}
+} */
 
 
 
 
 
-/* Footer styling */
+
+/* 
+
 footer {
     color: #8aff8e;
     text-align: center;
@@ -83,7 +85,10 @@ footer {
     z-index: 10;
 }
 
-/* Footer content sections */
+
+
+
+
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -142,7 +147,10 @@ footer {
     text-shadow: 0 0 10px #02e901;
 }
 
-/* Redesigned footer bottom section */
+
+
+
+
 .footer-bottom {
     background-color: #000000;
     padding: 15px 0;
@@ -164,7 +172,11 @@ footer {
     margin: 0;
 }
 
-/* Redes - Social Media Icons */
+
+
+
+
+
 .redes {
     width: 100px;
     display: flex;
@@ -204,7 +216,10 @@ footer {
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
 }
 
-/* Tooltip for social icons */
+
+
+
+
 .tooltip {
     visibility: hidden;
     background-color: #02e901;
@@ -236,7 +251,7 @@ footer {
 
 
 
-
+ */
 
 
 
@@ -380,5 +395,7 @@ footer {
 .redes2 a:hover .tooltip {
     visibility: visible;
     opacity: 1;
+    font-size: medium;
+
 }
 

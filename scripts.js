@@ -1,24 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
+// document.addEventListener("DOMContentLoaded", function() {
+//     const themeToggle = document.getElementById('theme-toggle');
+//     const body = document.body;
 
     // Check for saved theme preference
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-        body.classList.add(currentTheme);
-    }
+    // const currentTheme = localStorage.getItem('theme');
+    // if (currentTheme) {
+    //     body.classList.add(currentTheme);
+    // }
 
     // Toggle theme on button click
-    themeToggle.addEventListener('click', function() {
-        if (body.classList.contains('dark-mode')) {
-            body.classList.remove('dark-mode');
-            localStorage.setItem('theme', 'light-mode');
-        } else {
-            body.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark-mode');
-        }
-    });
-});
+//     themeToggle.addEventListener('click', function() {
+//         if (body.classList.contains('dark-mode')) {
+//             body.classList.remove('dark-mode');
+//             localStorage.setItem('theme', 'light-mode');
+//         } else {
+//             body.classList.add('dark-mode');
+//             localStorage.setItem('theme', 'dark-mode');
+//         }
+//     });
+// });
+
+
+
+
 
 
 
@@ -95,22 +99,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // FOOTER CAHNGING STYLE CODE
 
-document.getElementById('toggleSwitch').addEventListener('change', function() {
-    const footer1 = document.getElementById('footer-style-1');
-    const footer2 = document.getElementById('footer-style-2');
-    const toggleContainer = document.querySelector('.toggle-container');
+// document.getElementById('toggleSwitch').addEventListener('change', function() {
+//     const footer1 = document.getElementById('footer-style-1');
+//     const footer2 = document.getElementById('footer-style-2');
+//     const toggleContainer = document.querySelector('.toggle-container');
     
-    if (this.checked) {
-        footer1.style.display = 'none';
-        footer2.style.display = 'block';
-        toggleContainer.style.backgroundColor = '#02e901';  
+//     if (this.checked) {
+//         footer1.style.display = 'none';
+//         footer2.style.display = 'block';
+//         toggleContainer.style.backgroundColor = '#02e901';  
         
-    } else {
-        footer1.style.display = 'block';
-        footer2.style.display = 'none';
-        toggleContainer.style.backgroundColor = '';  // Reset background color when toggler is off
-    }
-});
+//     } else {
+//         footer1.style.display = 'block';
+//         footer2.style.display = 'none';
+//         toggleContainer.style.backgroundColor = '';  // Reset background color when toggler is off
+//     }
+// });
 
 
 
